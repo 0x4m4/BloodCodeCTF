@@ -111,6 +111,10 @@ For any queries or issues, please contact me at contact@0x4m4.com
 
 Happy Hacking!
 
+![Alt text](/Challenges.jpg)
+![Alt text](/Challenges1.jpg)
+![Alt text](/Challenges2.jpg)
+
 ---
 
 0x4m4   
