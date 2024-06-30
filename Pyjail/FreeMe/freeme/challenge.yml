@@ -1,0 +1,32 @@
+name: "FreeMe"
+author: 0x4m4
+category: Pyjail
+description: |- 
+  I need keys to escape from this jail.
+
+  **Author**: [0x4m4](https://0x4m4.com)
+value: 200
+type: container
+
+extra:
+  initial: 200
+  decay: 1
+  minimum: 200
+  image: freeme:latest
+  port: 8000
+  command: ""
+  volumes: ""
+  ctype: tcp
+
+flags:
+  - {
+      type: "static",
+      content: "SSCIT{F1n4lly_I_g0t_Fr33d0m_th4nk5}",
+      data: "case_sensitive"
+  }
+
+files:
+  - dist/freeme.py
+
+state: visible
+version: "0.1"

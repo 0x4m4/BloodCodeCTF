@@ -1,0 +1,30 @@
+name: "Source of all Problems"
+author: "0x4m4"
+category: Web
+description: |-
+    This was more of a warm up question and as the name suggests, the flag was divided into parts and embedded into the source code of the page.
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start."
+
+    **Author**: [0x4m4](https://0x4m4.com/)
+value: 100
+type: container
+
+extra:
+    initial: 100
+    decay: 1
+    minimum: 100
+    image: source_web:latest
+    port: 80
+    command: ""
+    volumes: ""
+    ctype: web
+flags:
+    - {
+        type: "static",
+        content: "SSCIT{i_w0uld_1ov3_t0_ch4ng3_th3_w0r1d_but_th3y_w0nt_giv3_m3_th3_50urc3_c0d3}",
+        data: "case_sensitive",
+    }
+
+state: visible
+version: "0.1"

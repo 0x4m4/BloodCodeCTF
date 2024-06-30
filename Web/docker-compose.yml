@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+    1024captcha:
+        build: 1024captcha/
+        ports:
+            - '5100:80'
+        restart: on-failure
+    cookie:
+        build: Cookie/
+        ports: 
+            - '5300:5000'
+        restart: on-failure
+    csrf:
+        build: csrf
+        ports: 
+            - '5400:5000'
+        restart: on-failure
+    reload:
+        build: reload/
+        ports: 
+            - '5600:80'
+        restart: on-failure
+    source_code:
+        build: SourceCode/
+        ports: 
+            - '5700:80'
+        restart: on-failure

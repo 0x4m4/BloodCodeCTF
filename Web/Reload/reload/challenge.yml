@@ -1,0 +1,31 @@
+name: "Reload"
+author: "0x4m4"
+category: Web
+description: |-
+    On viewing the page source, we can see the text embedded "You are the xxxth visitor to this page. Every five hundredth visitor gets a prize."
+
+    So we can figure out that we need to reload this page that many times and we'll probably get the flag. Can you figure out a way to do that?
+    
+    > __NOTE:__ It might take upto 1 minute for the container to start."
+
+value: 150
+type: container
+
+extra:
+    initial: 150
+    decay: 1
+    minimum: 150
+    image: reload_web:latest
+    port: 80
+    command: ""
+    volumes: ""
+    ctype: web
+flags:
+    - {
+        type: "static",
+        content: "SSCIT{w0w_th0se_w3r3_s0me_f4st_r3l04ds}",
+        data: "case_sensitive",
+    }
+
+state: visible
+version: "0.1"

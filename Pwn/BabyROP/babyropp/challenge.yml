@@ -1,0 +1,33 @@
+name: "BabyROP"
+author: "0x4m4"
+category: Pwn
+description: "If you deficiency of potassium then eat more bananas
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start.
+    
+    **Author**: [0x4m4](https://0x4m4.com/)"
+value: 100
+type: container
+
+extra:
+    initial: 100
+    decay: 1
+    minimum: 100
+    image: babyrop:latest
+    port: 8000
+    command: ""
+    volumes: ""
+    ctype: tcp
+
+
+flags:
+    - {
+        type: "static",
+        content: "SSCIT{n1c3_y0u_g00d_f0r_my_t34m_c0nt4ct_m3}",
+        data: "case_sensitive",
+    }
+files:
+  - dist/babyrop
+
+state: visible
+version: "0.1"

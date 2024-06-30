@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:600" rel="stylesheet"> 
+  <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+</head>
+  <body>
+    <main>
+<div class="login-holder">
+    <div class="container">
+        <div class="login">
+            <h1 class=hide >
+            <div class="form-holder">
+                <div class="header">
+                    <h6 id="hide">
+                        {% if admin == 'True' %}
+                            flag{hat3l_di_l1k3s_c00ki3s}
+                        {% elif user %}
+                         Morning pakistani tea without chocolaty snack is always incomplete
+                        {% endif %}
+                    </h6>
+                    <a class="header-item activated" href="#login" id="login-caller">Login</a>
+                    
+                </div>
+                <form action="/submit">
+                <div class="form activated" id="login" >
+                    <div class="input-row">
+                        <input class="input" id="User" type="text" name="username" required>
+                        <label class="label">Username</label>
+                        <span class="highlite"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-row">
+                        <input class="input" id="pass" type="hidden" name="password" required>
+                        <label class="label">Password</label>
+                        <span class="highlite"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div>
+                        <input class="check-input" type="checkbox" id="login-checkbox" />
+                        <label for="login-checkbox">Remember me</label>
+                    </div>
+                </div>
+               
+            </div>
+                <div class="sub-button" >
+                    <input class="button"  type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</main>
+<script src={{ url_for('static', filename='script.js') }}></script>
+</body>
+</html>

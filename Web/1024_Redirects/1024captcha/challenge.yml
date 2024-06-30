@@ -1,0 +1,30 @@
+name: "1024 Redirects"
+author: "0x4m4"
+category: Web
+description: |-
+    Somehow try to figure out how the URL changes and write a script.
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start."
+
+    **Author**: [0x4m4](https://0x4m4.com/)
+value: 150
+type: container
+
+extra:
+    initial: 150
+    decay: 1
+    minimum: 150
+    image: 1024captcha_web:latest
+    port: 80
+    command: ""
+    volumes: ""
+    ctype: web
+flags:
+    - {
+        type: "static",
+        content: "SSCIT{th1s_captcha_c0uldnt_tcha}",
+        data: "case_sensitive",
+    }
+
+state: visible
+version: "0.1"

@@ -1,0 +1,30 @@
+name: "LPC"
+author: 0x4m4
+category: Reverse Engineering
+description: |- 
+  Lets play Chess - naughty what are you thinking
+
+  **Author**: [0x4m4](https://0x4m4.com)
+value: 200
+type: container
+
+extra:
+  initial: 200
+  decay: 1
+  minimum: 200
+  image: chess:latest
+  port: 8000
+  command: ""
+  volumes: ""
+  ctype: tcp
+
+flags:
+  - {
+      type: "static",
+      content: "SSCIT{Y0u_c4n_n0t_b34t_m3_phys1c4lly_1n_ch3ss}",
+      data: "case_sensitive"
+  }
+
+
+state: visible
+version: "0.1"

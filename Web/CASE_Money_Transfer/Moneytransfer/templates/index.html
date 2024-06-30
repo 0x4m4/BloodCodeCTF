@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+<div id = "contents">
+    <h2>Welcome {{context.userid}}</h2>
+    This is your unique ID.
+    Other users can transfer money to you via this. Your current balance is {{context.balance}}.
+    <div id ="tbl">
+    <div id = "floats">
+    <div id = "services">
+        <div id="formtitle">Our Services</div>
+        <ul>
+            <li>
+                <div class="service_item">
+                Flag (PKR 1000 only) <a href="/flag"><span id="buy">Buy</span></a>
+            </div>
+            </li>
+                
+        </ul>
+    </div>
+    <div id = "transfer">
+        <div id="formtitle">Send Money</div>
+        <form>
+            <input placeholder="User ID" type="text" id="userid" name = "userid" size="64"/><br/>
+            <input placeholder="Amount" type="text" id="amount" name = "amount" size="64"/><br/>
+            <input type="hidden" name="csrf_token" id="csrf_token" value="{{context.csrf_token}}"><br/>
+            <div id="outersb">
+            <div id="sbbtn" onclick="transfer()">
+                Submit
+            </div>
+            <div id = "msg" style="display:none;">
+
+            </div>
+            </div>
+            
+        </form>
+    </div>
+</div>
+</div>
+</div>  
+{% endblock %}

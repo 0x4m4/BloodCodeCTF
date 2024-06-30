@@ -1,0 +1,31 @@
+name: "Money Transfer"
+author: "0x4m4"
+category: Web
+description: |-
+    The admin of this banking website is a very rich guy who loves reading feedback.
+    Little does he know that he is about to be the target of the biggest online bank heist in history!!!
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start."
+
+    **Author**: [0x4m4](https://0x4m4.com/)
+value: 200
+type: container
+
+extra:
+    initial: 200
+    decay: 1
+    minimum: 200
+    image: csrf_web:latest
+    port: 5000
+    command: ""
+    volumes: ""
+    ctype: web
+flags:
+    - {
+        type: "static",
+        content: "SSCIT{g1ve_m3_my_mon3y_b4ck}",
+        data: "case_sensitive",
+    }
+
+state: visible
+version: "0.1"

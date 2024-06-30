@@ -1,0 +1,34 @@
+name: "ReadMe"
+author: "0x4m4"
+category: Pwn
+description: "some sort of comparison is happening. Don't know how I can escape it. Help me
+    
+    > __NOTE:__ It might take upto 2 minutes for the container to start.\n
+    
+    **Author**: [0x4m4](https://0x4m4.com/)"
+value: 100
+type: container
+
+extra:
+    initial: 100
+    decay: 1
+    minimum: 100
+    image: readme:latest
+    port: 8000
+    command: ""
+    volumes: ""
+    ctype: tcp
+
+
+
+flags:
+    - {
+        type: "static",
+        content: "SSCIT{n1c3_but_dont_trust_0n_nu11}",
+        data: "case_sensitive",
+    }
+files:
+  - dist/readme.c
+
+state: visible
+version: "0.1"

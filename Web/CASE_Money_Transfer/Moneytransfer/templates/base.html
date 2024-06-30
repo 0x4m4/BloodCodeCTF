@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{context.title}}</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename='styles.css') }} " >
+        <script src="//use.edgefonts.net/actor.js"></script>
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    </head>
+    <body>
+            <div id = "navbar">
+                CASE Bank Inc.
+
+                <a href = "/feedback" style="right: 5rem;position: absolute;">Feeback</a>
+            </div>
+        {% block contents %}
+        {% endblock %}
+        <script src="{{ url_for('static', filename='app.js') }}"></script>
+    </body>
+</html>

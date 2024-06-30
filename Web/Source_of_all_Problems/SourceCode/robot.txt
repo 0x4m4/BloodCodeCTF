@@ -1,0 +1,6 @@
+# Rule 2 Part 5 - 1d_but_th3
+User-agent: *
+Allow: index.html
+Allow: style.css
+Allow: index.js
+Disallow: 506172742036202D20795F77306E745F676976.html

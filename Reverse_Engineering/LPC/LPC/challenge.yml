@@ -1,0 +1,30 @@
+name: "LPC"
+author: 0x4m4
+category: Reverse Engineering
+description: |- 
+  Lets play Chess - naughty what are you thinking\n
+
+  Following are the links:\n
+  
+  Use anyone of these connections
+
+  nc challs.0x4m4.com 9001
+  nc challs.0x4m4.com 9002
+  nc challs.0x4m4.com 9003
+
+  If you are noob don't play with those ports
+  **Author**: [0x4m4](https://0x4m4.com)
+value: 200
+type: standard
+
+
+flags:
+  - {
+      type: "static",
+      content: "SSCIT{Y0u_c4n_n0t_b34t_m3_phys1c4lly_1n_ch3ss}",
+      data: "case_sensitive"
+  }
+
+
+state: visible
+version: "0.1"
